@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
+import 'package:tasks_animation/screens/home/widgets/stagger_animation.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -27,6 +28,8 @@ class _HomeScreenState extends State<HomeScreen>
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return StaggerAnimation(
+      controller: _controller.view,
+    );
   }
 }
