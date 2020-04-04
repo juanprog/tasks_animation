@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tasks_animation/screens/home/widgets/category_view.dart';
 
 class HomeTop extends StatelessWidget {
   final Animation<double> containerGrow;
@@ -31,8 +32,8 @@ class HomeTop extends StatelessWidget {
             ),
             Container(
               alignment: Alignment.topRight,
-              width: containerGrow.value * 120,
-              height: containerGrow.value * 120,
+              width: containerGrow.value * 90,
+              height: containerGrow.value * 90,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
@@ -43,7 +44,7 @@ class HomeTop extends StatelessWidget {
               child: Container(
                 width: containerGrow.value * 35,
                 height: containerGrow.value * 35,
-                margin: EdgeInsets.only(left: 80),
+                margin: EdgeInsets.only(left: 60),
                 child: Center(
                   child: Text(
                     "2",
@@ -60,6 +61,7 @@ class HomeTop extends StatelessWidget {
                 ),
               ),
             ),
+            CategoryView(),
           ],
         ),
       ),
